@@ -29,6 +29,24 @@ do {
 console.log("Adivinaste");
 console.log("El numero de intentos fue: " + intentos);
 
+
+console.log("Ejercicio 4");
+let numero = parseInt(prompt("Numero"))
+    if (numero <= 0) {
+        console.log(numero +" No es primo");
+    }
+    let contador = 0
+    for (let i = 1; i <= numero; i++) {
+        if(numero % i === 0){
+            contador++
+        }
+    }
+    if(contador === 2){
+        console.log(numero + " Es primo");
+    }else{
+        console.log(numero + " No es primo");
+    }
+
 console.log("Ejercicio 6");
 let arrayElem = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 for(let i=0; i<arrayElem.length; i++){
@@ -98,8 +116,8 @@ for (let i = 0; i < num12.length; i++) {
 console.log("Ejercicio 13");
 let jugador1 = prompt("Nombre de jugador 1")
 let jugador2 = prompt("Nombre de jugador 2")
-let mano1 
-let mano2 
+let mano1
+let mano2
 do {
     mano1 = prompt(jugador1 + " Piedra, papel o tijera")
     mano2 = prompt(jugador2 + " Piedra, papel o tijera")
@@ -116,7 +134,7 @@ do {
      }else if(mano1 === "tijera" && mano2 === "papel"){
         console.log(jugador1 + " ganó");
      }
-} while (mano1 === mano2); 
+} while (mano1 === mano2);
 
 
 console.log("Ejercicio 14");
