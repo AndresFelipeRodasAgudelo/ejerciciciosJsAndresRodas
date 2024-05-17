@@ -1,0 +1,14 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+#borrar{
+    height: 4%;
+}
+#guardar{
+    height: 4%;
+}
+.card{
+    width: 15rem;
+}
